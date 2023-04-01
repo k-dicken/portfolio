@@ -1,0 +1,128 @@
+#works {
+    min-height: 90vh;
+    width: 100vw;
+
+    padding: $page-fullpadding;
+
+    display: flex;
+    justify-content: flex-end;
+
+
+    .works-container {
+        height: 100%;
+        width: 60%;
+        max-width: 700px;
+    
+        .work-section {
+            width: 100%;
+
+            margin-bottom: 20px;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .link {
+                margin-right: 8px;
+                padding: 6px;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 10px;
+
+                svg {
+                    height: 24px;
+                    width: 24px;
+
+                    fill: $white;
+                }
+            }
+
+            .work-content {
+                height: 180px;
+                width: calc(100% - 50px);
+
+                padding: 4%;
+
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                flex-direction: column;
+
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                border-radius: 20px 0 0 20px;
+
+                color: $white;
+
+                * {
+                    text-shadow: 2px 2px 2px $shadow;
+                }
+
+                .title {
+                    margin-bottom: 10px;
+                    font-size: $font-l;
+                    font-family: $header-font;
+                    text-align: right;
+                }
+
+                .subtitle {
+                    text-align: right;
+                }
+            }
+
+            .work-content:hover {
+                height: 320px;
+
+                cursor: pointer;
+
+                animation-name: work-hover;
+                animation-duration: .8s;
+            }
+
+            @keyframes work-hover {
+                from {height: 180px}
+                to {height: 320px}
+            }
+
+            .top {
+                border-radius: 20px 20px 0 20px;
+            }
+
+            .bottom {
+                border-radius: 20px 0 20px 20px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #works {
+        align-items: flex-end;
+        flex-direction: column;
+
+        .works-container {
+            width: 100%;
+
+            .work-section {
+                .work-content {
+                    width: 100%;
+                    max-width: none;
+
+                    .title {
+                        font-size: $font-r;
+                    }
+
+                    .subtitle {
+                        font-size: $font-s;
+                    }
+                }
+            }
+        }
+    }
+}

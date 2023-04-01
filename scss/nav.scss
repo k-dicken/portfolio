@@ -1,0 +1,126 @@
+nav {
+    height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: $page-sidepadding;
+
+    .nav-line {
+        height: 1px;
+        width: 46%;
+        
+        background-color: $black;
+    }
+
+    .nav-links {
+        width: 30%;
+        min-width: 280px;
+        margin: 0 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            margin: 0 10px;
+            font-family: $header-font;
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        .active-nav {
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+        }
+    }
+
+    .nav-decor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        svg {
+            height: 22px;
+            width: 22px;
+            margin: 0 1vw;
+
+            border-radius: 50%;
+            background-color: $dark-grey;
+        }
+    }
+
+}
+
+#socials {
+    height: 80px;
+    width: fit-content;
+    min-width: 40px;
+    
+    display: flex;
+    justify-content: flex-end;
+
+    // position: absolute;
+
+    background-color: blue;
+
+    a { 
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        height: 40px;
+        width: 40px;
+        
+        margin: 8px 16px 8px 0;
+
+        fill: $dark-grey;
+        background-color: $white;
+    }
+
+    svg:hover {
+        fill: $black;
+    }
+}
+
+.column {
+    // left: 4vw;
+    // top: 16vh;
+    flex-direction: column;
+}
+
+.row {
+    // left: 4vw;
+    // bottom: 6vh;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+    #socials {
+
+        svg {
+            height: 30px;
+            width: 30px;
+        } 
+        
+    }
+
+    .column {
+        // top: 12vh;        
+        // bottom: initial;
+        // position: absolute;
+    }
+
+    .row {
+        // position: fixed;
+        // left: initial;
+        // right: 4vw;
+    }
+}

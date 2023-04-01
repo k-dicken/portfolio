@@ -1,0 +1,13 @@
+footer {
+    height: 10vh;
+
+    padding: $page-sidepadding;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        color: #000;
+    }
+}
