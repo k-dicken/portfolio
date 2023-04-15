@@ -93,8 +93,6 @@ nav .nav-decor svg {
   width: fit-content;
   min-width: 40px;
   display: flex;
-  justify-content: flex-end;
-  background-color: blue;
 }
 #socials a {
   display: flex;
@@ -103,7 +101,6 @@ nav .nav-decor svg {
 #socials svg {
   height: 40px;
   width: 40px;
-  margin: 8px 16px 8px 0;
   fill: #80767E;
   background-color: #FFFFFF;
 }
@@ -710,6 +707,9 @@ footer a {
 #contact .contact-left {
   height: 100%;
   width: 40%;
+}
+#contact .contact-left a {
+  color: #80767E;
 }
 #contact .contact-left .title {
   font-size: 3em;

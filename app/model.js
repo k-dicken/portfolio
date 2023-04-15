@@ -26,7 +26,7 @@ let works = [
     links: [
       {
         name: "View Site",
-        link: "https://kdicken.pages.iu.edu/designerChocolatiers/index.html",
+        link: "https://k-dicken.github.io/Designer-Chocolatiers/",
       },
     ],
     tags: [

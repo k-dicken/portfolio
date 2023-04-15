@@ -11,6 +11,11 @@
         height: 100%;
         width: 40%;
 
+        a {
+            color: $dark-grey;
+            // text-decoration: none;
+        }
+
         .title {
             font-size: $font-xxl;
             font-family: $header-font;
